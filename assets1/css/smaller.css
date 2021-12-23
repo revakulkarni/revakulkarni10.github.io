@@ -1,0 +1,151 @@
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+@media (min-width: 769px) {
+  .floral {
+    background: url("../../assets/img/Floral%20left.png") center / contain no-repeat;
+    padding: 125px;
+    height: 0px;
+    padding-top: 0px;
+    padding-bottom: 125px;
+    padding-right: 125px;
+    margin: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .floral {
+    background: url("../../assets/img/Floral%20left.png") center / contain no-repeat;
+    width: 0px;
+    padding: 0px;
+    height: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    margin: 1px;
+  }
+}
+
+@media (min-width: 769px) {
+  .floralr {
+    background: url("../../assets/img/Floral%20right.png") center / contain no-repeat;
+    padding: 125px;
+    height: 0px;
+    padding-top: 0px;
+    padding-right: 125px;
+    padding-bottom: 125px;
+  }
+}
+
+@media (max-width: 768px) {
+  .floralr {
+    background: url("../../assets/img/Floral%20right.png") center / contain no-repeat;
+    padding: 0px;
+    height: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    width: 0px;
+  }
+}
+
+h1 {
+  font-size: 39px;
+  font-weight: bold;
+}
+
+.text-end {
+  text-align: right!important;
+}
+
+@media (min-width: 1400px) {
+  .roomsmall {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  p {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+}
+
+h2 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.text-startsmall {
+  font-size: 30px !important;
+  text-align: center!important;
+}
+
+@media (max-width: 575px) {
+  .smallcolumn {
+    padding: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .psmall {
+    font-family: 'Playfair Display', serif;
+    width: auto;
+    background: #ffffff;
+    text-align: center;
+    padding: 75px;
+    padding-left: 50px;
+    font-size: 19px;
+    padding-bottom: 75px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .psmall {
+    font-family: 'Playfair Display', serif;
+    width: auto;
+    background: #ffffff;
+    text-align: center;
+    padding: 50px;
+    padding-left: 50px;
+    font-size: 14px;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 576px) {
+  .hsmall {
+    font-family: Cinzel, serif;
+    font-size: 45px !important;
+    margin-top: 10px;
+    padding-top: 0;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .hsmall {
+    font-family: Cinzel, serif;
+    font-size: 30px !important;
+    margin-bottom: -20px;
+    padding-top: 0;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.text-startsmall {
+  text-align: center!important;
+}
+
+.topp {
+  margin-top: 50px !important;
+}
+

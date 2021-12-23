@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/aboutday2.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="stylesheet" href="assets1/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets1/css/smaller.css">
+    <link rel="stylesheet" href="assets1/css/styles.css">
+
+    <link rel="stylesheet" href="assets3/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets3/css/smaller.css">
+    <link rel="stylesheet" href="assets3/css/styles.css">
+
+    <link rel="stylesheet" href="assets4/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets4/css/LR.css">
+    <link rel="stylesheet" href="assets4/css/NavWithHero.css">
+    <link rel="stylesheet" href="assets4/css/styles.css">
+
+    <link rel="stylesheet" href="assets5/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets5/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets5/css/Footer.css">
+    <link rel="stylesheet" href="assets5/css/LR.css">
+    <link rel="stylesheet" href="assets5/css/NavWithHero.css">
+    <link rel="stylesheet" href="assets5/css/styles.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Playfair+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+    @-webkit-keyframes slidein {
+  0% {
+    top: -800px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes slidein {
+  0% {
+    top: -800px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@-webkit-keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -800px;
+    opacity: 0;
+  }
+}
+@keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -800px;
+    opacity: 0;
+  }
+}
+body {
+  font-family: "Playfair Display",serif;
+  font-size: 20px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #FDE6CE;
+}
+img{
+-moz-box-shadow: none;
+-goog-ms-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+#scene {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100vw;
+  height: 80vh;
+  padding-top: 10px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 0;
+}
+body #scene #left-zone {
+  background: #fff;
+  height: 75%;
+  flex-grow: 0;
+  display: flex;
+  width: 30vw;
+  align-items: center;
+  justify-content: left;
+}
+body #scene #left-zone .list {
+  display: flex;
+  list-style: none;
+  align-content: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+body #scene #left-zone .list li.item input[type=radio] {
+  display: none;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label {
+  display: block;
+  opacity: 1;
+  height: 70px;
+  text-align: center;
+  line-height: 30px;
+}
+
+body #scene #left-zone .list li.item input[type=radio] ~ label:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+
+body #scene #left-zone .list li.item input[type=radio] ~ .content {
+  position: absolute;
+  left:32vw;
+  top: -900vh;
+  width: 100%;
+  height: 100%;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-name: slideout;
+          animation-name: slideout;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FDE6CE;
+}
+
+body #scene #left-zone .list li.item input[type=radio] ~ .content h1{
+    height: 100%;
+  display: flex;
+  flex-direction: column;
+    color: black;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:20px;
+    left: -15vw;
+}
+
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label {
+  opacity: 1;
+  -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label {
+  color: black;
+  background-color: #FDE6CE;
+  border-right: solid 4px black;
+  width: 32vw;
+}
+
+
+body #scene #left-zone .list li.item input[type=radio]:checked ~ .content {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+body #scene #middle-border {
+  background-color: #eee;
+  height: 75%;
+  flex-grow: 1;
+  max-width: 0px;
+  z-index: 0;
+}
+body #scene #right-zone {
+  background: #fff;
+  height: 100%;
+  flex-grow: 3;
+  width: 0px;
+}
+.headd{
+    font-family: "Cinzel", serif;
+    position: relative;
+    left: 20vw;
+    top: 10vh;
+}
+.headerr{
+    font-family: "Cinzel", serif;
+    font-size: 15px;
+    line-height: 1px;
+    font-style: italic;
+}
+.headerrr{
+    font-style: normal !important;
+    margin-top: 2px;
+}
+
+.vertslider{
+   margin-top: 100vh;
+  height: 80vh;
+  width: 100vw;
+  background-color: #FDE6CE;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.vertislider1{
+  height: 80vh;
+  width: 90vw;
+  background-color: #FDE6CE;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container1 {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  position: relative;
+  width: 90%;
+  height: 60%;
+  margin-bottom: 20px;
+  transform: rotate(90deg);
+  margin-left: -15vw;
+}
+
+.secpart {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+     transform: rotate(-90deg);
+}
+
+#item-1:checked ~ .cards #song-4, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2, #item-4:checked ~ .cards #song-3{
+  transform: translatex(0) scale(1);
+  opacity: 0;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-4, #item-3:checked ~ .cards #song-1,#item-4:checked ~ .cards #song-2{
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 50;
+}
+
+
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-4, #item-4:checked ~ .cards #song-1{
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 50;
+}
+
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3, #item-4:checked ~ .cards #song-4 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 100;
+}
+#item-1:checked ~ .cards #song-1 img, #item-2:checked ~ .cards #song-2 img, #item-3:checked ~ .cards #song-3 img, #item-4:checked ~ .cards #song-4 img {
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+.player {
+  background-color: #fff;
+  min-width: 30vw;
+  padding: 16px 10px;
+  margin-left: -200px;
+}
+
+.sliders{
+  position: relative;
+  top: 0;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+}
+
+.upper-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30vh;
+  width: 28vw;
+  overflow: hidden;
+  margin-left: -10px;
+  
+}
+
+.song-info {
+  width: calc(100% - 32px);
+  display: block;
+  height: 30vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.song-info .title {
+  color: black;
+  font-size: 30px;
+  font-family: "Playfair Display",serif;
+  line-height: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.sub-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-family: "Playfair Display",serif;
+  line-height: 18px;
+  color: black;
+  font-style: italic;
+}
+
+.headd img{
+  height: 78vh;
+  width: 60vw;
+}
+
+.info-area {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transition: transform 0.4s ease-in;
+}
+
+#item-1:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test {
+  transform: translateY(-30vh);
+}
+
+#item-3:checked ~ .player #test {
+  transform: translateY(-60vh);
+}
+
+#item-4:checked ~ .player #test {
+  transform: translateY(-90vh);
+}
+.price img{
+  transform: rotate(0deg) !important;
+}
+.price{
+  color: black;
+  font-size: 20px;
+  font-family: "Playfair Display",serif;
+  line-height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.sliders{
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  transition: background 0.4s ease-in;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.container1 {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards1 {
+  position: relative;
+  width: 90%;
+  height: 60%;
+  margin-bottom: 20px;
+  transform: rotate(90deg);
+  margin-left: -15vw;
+}
+
+
+
+#items-1:checked ~ .cards1 #song-4, #items-2:checked ~ .cards1 #song-1, #items-3:checked ~ .cards1 #song-2, #items-4:checked ~ .cards1 #song-3{
+  transform: translatex(0) scale(1);
+  opacity: 0;
+  z-index: 900;
+}
+
+#items-1:checked ~ .cards1 #song-3, #items-2:checked ~ .cards1 #song-4, #items-3:checked ~ .cards1 #song-1,#items-4:checked ~ .cards1 #song-2{
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 950;
+}
+
+#items-1:checked ~ .cards1 #song-2, #items-2:checked ~ .cards1 #song-3, #items-3:checked ~ .cards1 #song-4, #items-4:checked ~ .cards1 #song-1{
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 950;
+}
+
+#items-1:checked ~ .cards1 #song-1, #items-2:checked ~ .cards1 #song-2, #items-3:checked ~ .cards1 #song-3, #items-4:checked ~ .cards1 #song-4 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1000;
+}
+#items-1:checked ~ .cards1 #song-1 img, #items-2:checked ~ .cards1 #song-2 img, #items-3:checked ~ .cards1 #song-3 img, #items-4:checked ~ .cards1 #song-4 img,  img  {
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+.player {
+  background-color: #fff;
+  min-width: 30vw;
+  padding: 16px 10px;
+  margin-left: -200px;
+}
+
+.upper-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30vh;
+  width: 28vw;
+  overflow: hidden;
+  margin-left: -10px;
+  
+}
+
+.song-info {
+  width: calc(100% - 32px);
+  display: block;
+  height: 30vh;
+}
+
+.song-info .title {
+  color: black;
+  font-size: 30px;
+  font-family: "Playfair Display",serif;
+  line-height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-style: bold;
+  padding: auto;
+  margin: auto;
+}
+
+.sub-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-family: "Playfair Display",serif;
+  line-height: 20px;
+  color: black;
+}
+
+
+.info-area {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transition: transform 0.4s ease-in;
+}
+
+#items-1:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#items-2:checked ~ .player #test {
+  transform: translateY(-30vh);
+}
+
+#items-3:checked ~ .player #test {
+  transform: translateY(-60vh);
+}
+
+#items-4:checked ~ .player #test {
+  transform: translateY(-90vh);
+}
+
+.price img{
+  transform: rotate(0deg) !important;
+}
+.price{
+  color: black;
+  font-size: 20px;
+  font-family: "Playfair Display",serif;
+  padding-top: 0px;
+  padding-bottom: 0;
+  line-height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+}
+
+.brands{
+  justify-content: center;
+  margin: 0;
+  padding: 0; 
+  align-items: center;
+  height: 18vh;
+  width: 100vw;
+  background-color: #FDE6CE;
+  font-size: 75px;
+  font-family: 'Cinzel Decorative', cursive;
+  background-color: #FDE6CE;
+}
+
+
+.brands img{
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: 18vh;
+  width: auto;
+  
+}
+
+.down{
+  margin-bottom: 35vh;
+  margin-top: 10vh;
+}
+
+.up{
+  margin-top: -40vh;
+  margin-bottom: -100vh;
+}
+
+.links{
+  height: 20vh;
+  width: 100vw;
+  position: relative;
+  top:80vh;
+}
+.links a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Playfair Display",serif;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  min-height: 60vh !important;
+  height: 100vh !important; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(5, 5, 5, 0.658); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: transparent;
+  margin: 12% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: none;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  left: 60vw;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1199px){
+  .roombigs{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .roomsmalls{
+    display: none;
+  }
+}
+
+
+.adventures{
+  position: relative;
+  bottom: 40vh;
+  height: 100vh;
+  background-color: #FDE6CE;
+}
+
+.cntr{
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+ 
+</style>
+<body>
+
+  <div style="height: 100vh;">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="background: rgba(0,0,0,0.39);padding: 2px;margin-top: 0px;height: 90px;">
+        <div class="container-fluid"><a href="index.html" style="padding: 0%;margin: 0;"><img id="logo-1" src="images/logo.png" style="width: 225px;height: 65.5px; box-shadow: none !important;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link d-lg-flex align-items-lg-center mainnavlink" data-bss-hover-animate="pulse" href="brands.html" style="font-family: Cinzel, serif;color: rgb(255,255,255);font-size: 20px;">Brands</a></li>
+                    <li class="nav-item"><a class="nav-link d-lg-flex align-items-lg-center mainnavlink" data-bss-hover-animate="pulse" href="membership.html" style="font-family: Cinzel, serif;color: rgb(255,255,255);font-size: 20px;">Membership offers</a></li>
+                    <li class="nav-item d-lg-flex align-items-lg-center"><a class="nav-link mainnavlink" data-bss-hover-animate="pulse" style="font-family: Cinzel, serif;color: rgb(255,255,255);font-size: 20px;" href="gallery.html">Gallery</a></li>
+            
+                    <li class="nav-item dropdown d-lg-flex align-items-lg-center" style="font-family: 'Playfair Display', serif;background: rgba(255,255,255,0);margin-top: 0px;"><a class="dropdown-toggle nav-link mainnavlink" aria-expanded="false" data-bs-toggle="dropdown" data-bss-hover-animate="pulse" href="#" style="font-family: Cinzel, serif;color: rgb(255,255,255);font-size: 20px;">En</a>
+                        <div class="dropdown-menu" style="background: #fef2e5;margin-top: auto;"><a class="dropdown-item" href="#">English</a><a class="dropdown-item" href="#">Spanish</a><a class="dropdown-item" href="#">Hindi</a><a class="dropdown-item" href="#">Chinese</a><a class="dropdown-item" href="#">Arabic</a></div>
+                    </li>
+                </ul>
+                <form method="post"><input class="form-control" type="text" style="width: 100%;background: url(&quot;images/search.png&quot;) right / auto no-repeat, #fef2e5;border-radius: 6px;border-style: none;"></form>
+            </div>
+        </div>
+    </nav>
+    <div class="simple-slider" style="height: 100%;background: url(&quot;images/brandhero.png&quot;) center / cover no-repeat;"></div>
+</div>
+  <div class="roombigs">
+    <div class="brands" ><center><img src="images/brand.png" style="box-shadow: none;"alt=""></center></div>
+    <div id="scene">
+        <div id="left-zone">
+          <ul class="list">
+            <li class="item">
+              <input type="radio" id="MELBOURNE" name="basic_carousel" value="image" checked="checked"/>
+              <label class="label_melbourne" for="MELBOURNE">HOTEL MELBOURNE
+                  <div class="headerr"> <img src="images/locationlogo.png" style="height: 12px;width: 10px;padding-right: 2px; box-shadow: none !important;" alt=""> Melbourne
+                </div>
+                <div class="headerr headerrr">5<img src="images/star.png" style="height: 15px;width: 15px;padding-right: 1px; padding-left: 2px; box-shadow: none !important;" alt=""></div>
+              </label>
+              <div class="content content_melbourne">
+                <h1 class="headd">HOTEL MELBOURNE <img src="images/hotel1.png" alt=""></h1>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="RIVERIA" name="basic_carousel" value="image"/>
+              <label class="label_riveria" for="RIVERIA">HOTEL RIVERIA
+                <div class="headerr"> <img src="images/locationlogo.png" style="height: 12px;width: 10px;padding-right: 2px; box-shadow: none !important;" alt=""> Melbourne
+                </div>
+                <div class="headerr headerrr">7<img src="images/star.png" style="height: 15px;width: 15px;padding-right: 1px; padding-left: 2px; box-shadow: none !important;" alt=""></div>
+              </label>
+              <div class="content content_riveria">
+                <h1 class="headd">HOTEL RIVERIA <img src="images/hotel2.png" alt=""></h1>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="CARLTON" name="basic_carousel" value="image"/>
+              <label class="label_carlton" for="CARLTON">HOTEL CARLTON
+                <div class="headerr"> <img src="images/locationlogo.png" style="height: 12px;width: 10px;padding-right: 2px; box-shadow: none !important;" alt=""> Melbourne
+                </div>
+                <div class="headerr headerrr">3<img src="images/star.png" style="height: 15px;width: 15px;padding-right: 1px; padding-left: 2px; box-shadow: none !important;" alt=""></div>
+              </label>
+              <div class="content content_carlton">
+                <h1 class="headd">HOTEL CARLTON<img src="images/hotel3.png" alt=""></h1>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="DARWIN" name="basic_carousel" value="image"/>
+              <label class="label_darwin" for="DARWIN">HOTEL DARWIN
+                <div class="headerr"> <img src="images/locationlogo.png" style="height: 12px;width: 10px;padding-right: 2px; box-shadow: none !important;" alt=""> Melbourne
+                </div>
+                <div class="headerr headerrr">4<img src="images/star.png" style="height: 15px;width: 15px;padding-right: 1px; padding-left: 2px; box-shadow: none !important;" alt=""></div>
+              </label>
+              <div class="content content_darwin">
+                <h1 class="headd">HOTEL DARWIN<img src="images/hotel4.png" alt=""></h1>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="FLEXIO" name="basic_carousel" value="image"/>
+              <label class="label_flexio" for="FLEXIO">HOTEL FLEXIO
+                <div class="headerr"> <img src="images/locationlogo.png" style="height: 12px;width: 10px;padding-right: 2px; box-shadow: none !important;" alt=""> Melbourne
+                </div>
+                <div class="headerr headerrr">5<img src="images/star.png" style="height: 15px;width: 15px;padding-right: 1px; padding-left: 2px; box-shadow: none !important;" alt=""></div>
+              </label>
+              <div class="content content_flexio">
+                <h1 class="headd">HOTEL FLEXIO<img src="images/hotel5.png" alt=""></h1>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="CASABLANCA" name="basic_carousel" value="image"/>
+              <label class="label_casablanca" for="CASABLANCA">HOTEL CASABLANCA
+                <div class="headerr"> <img src="images/locationlogo.png" style="height: 12px;width: 10px;padding-right: 2px; box-shadow: none !important;" alt=""> Melbourne
+                </div>
+                <div class="headerr headerrr">6<img src="images/star.png" style="height: 15px;width: 15px;padding-right: 1px; padding-left: 2px; box-shadow: none !important;" alt=""></div>
+              </label>
+              <div class="content content_casablanca">
+                <h1 class="headd">HOTEL CASABLANCA<img src="images/hotel6.png" alt=""></h1>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="MARINA" name="basic_carousel" value="image"/>
+              <label class="label_marina" for="MARINA">HOTEL MARINA
+                <div class="headerr"> <img src="images/locationlogo.png" style="height: 12px;width: 10px;padding-right: 2px; box-shadow: none !important;" alt=""> Melbourne
+                </div>
+                <div class="headerr headerrr">4<img src="images/star.png" style="height: 15px;width: 15px;padding-right: 1px; padding-left: 2px; box-shadow: none !important;" alt=""></div>
+              </label>
+              <div class="content content_marina">
+                <h1 class="headd">HOTEL MARINA<img src="images/hotel7.png" alt=""></h1>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="PEARL" name="basic_carousel" value="image"/>
+              <label class="label_pearl" for="PEARL">HOTEL PEARL
+                <div class="headerr"> <img src="images/locationlogo.png" style="height: 12px;width: 10px;padding-right: 2px; box-shadow: none !important;" alt=""> Melbourne
+                </div>
+                <div class="headerr headerrr">4<img src="images/star.png" style="height: 15px;width: 15px;padding-right: 1px; padding-left: 2px; box-shadow: none !important;" alt=""></div>
+              </label>
+              <div class="content content_pearl">
+                <h1 class="headd">HOTEL PEARL<img src="images/hotel10.png" alt=""></h1>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="middle-border"></div>
+      </div>
+      <div class="brands down" ><center> Hotel Adventures  </center></div>
+      <center>
+      <div class="adventures">
+        <div class="order-5" style="height: 70vh;background: #FDE6CE; padding-top: 20vh;">
+          <div class="container lrcontainer" style="font-family: 'Playfair Display', serif;text-align: center;font-size: 17px;">
+              <div class="row justify-content-center">
+                  <div id="lrleftcol" class="col-md-4 lrcol" style="padding: 0;padding-left: 10px;padding-right: 10px;margin-bottom: 10px;margin-top: 10px;margin-left: 0px;"><img style="width: 100%; height: 55vh;" src="images/adven1.png" />
+                      <h1 style="font-size: 22px;margin-top: 20px;"><strong>PARA-GLIDING</strong><br /></h1>
+                      <p style="margin-top: 20px;"><br />Paragliding : an adventure sport where you glide through the air using a wide canopy, a fabric wing.<br /><br /></p>
+                  </div>
+                  <div id="lrmidcol" class="col-md-4 lrcol" style="padding: 0;padding-left: 10px;padding-right: 10px;margin-top: 10px;margin-bottom: 10px;"><img style="width: 100%; height: 55vh;" src="images/adven2.png" />
+                      <h1 style="font-size: 22px;margin-top: 20px;">SCUBA DIVING</h1>
+                      <p style="margin-top: 20px;"><br />Scuba diving can be an exotic and enriching activity, and it can also be a therapeutic one. <br /><br /></p>
+                  </div>
+                  <div id="lrrightcol" class="col-md-4 lrcol" style="padding: 0;padding-left: 10px;padding-right: 10px;margin-top: 10px;margin-bottom: 10px;"><img style="width: 100%;height: 55vh;" src="images/adven3.png" />
+                      <h1 style="font-size: 22px;margin-top: 20px;">SWIMMING</h1>
+                      <p style="margin-top: 20px;"><br />At the very least, there’s certainly nothing more refreshing than a quick trip to the pool. Indeed, with temperatures at their peak.<br /><br /></p>
+                  </div>
+              </div>
+          </div>
+      </div></center>
+      <div class="brands up" ><center> Hotel ROOms</center></div>
+
+
+
+      <div class="sliders">
+        <div class="vertslider" id="rooms">
+          <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <input type="radio" name="slider" id="item-4">
+            <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img class="secpart" src="images/luxury.png" alt="song">
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img class="secpart" src="images/premium.png" alt="song">
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img class ="secpart"src="images/midscale.png" alt="song">
+            </label>
+            <label class="card" for="item-4" id="song-4">
+              <img class="secpart"src="images/economy.png" alt="song">
+            </label>
+          </div>
+          <div class="player">
+            <div class="upper-part">
+              <div class="info-area" id="test">
+              <center>
+                <label class="song-info" id="song-info-1">
+                    <div class="title">Luxury Room
+                    <div class="price">Price: €60
+                  </div></div>
+                  <div class="sub-line">
+                    <div class="subtitle">Deluxe rooms, are modern decorated, can accommodate up to 2 persons, totally soundproofed and equipped with high tech comforts and private hydromassage bathtub.
+                    </div>
+                  </div>
+                  <button id="BTN"type="button" class="button" style="border: none;">View Rooms</button>
+                </label>
+                <label class="song-info" id="song-info-2">
+                  <div class="title">Premium Room
+                    <div class="price">Price: €40
+                    </div>
+                  </div>
+                  <div class="sub-line">
+                    <div class="subtitle">Premium rooms feature the ambiance and space you're looking for to unwind and are ornated with state-of-the-art amenities.</div>
+                  </div>
+                  <button id="BTN-2"type="button" class="button" style="border: none;">View Rooms</button>
+                </label>
+                <label class="song-info" id="song-info-3">
+                  <div class="title">MidScale Room
+                    <div class="price">Price: €30
+                    </div>
+                  </div>
+                  <div class="sub-line">
+                    <div class="subtitle">Blending style with functionality is an important objective for designers when delivering a midscale hotel room. Practical for the business user and appealing for the tourist market</div>
+                  </div>
+                  <button id="BTN-3" type="button" class="button" style="border: none;">View Rooms</button>
+                </label>
+                <label class="song-info" id="song-info-4">
+                  <div class="title">Economy Room
+                    <div class="price">Price: €20
+                    </div>
+                  </div>
+                  <div class="sub-line">
+                    <div class="subtitle">Economy rooms feature a design blended with Ottoman motifs, each line carrying tones from the city, reflecting the stylish elegance of nobility.</div>
+                  </div>
+                  <button id="BTN-4" type="button" class="button" style="border: none;">View Rooms</button>
+                </label></center>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="brands"><center> Hotel Cuisines</center></div>
+
+      <div class="vertislider1" id="cuisines">
+        <div class="container1">
+          <input type="radio" name="slider" id="items-1" checked>
+          <input type="radio" name="slider" id="items-2">
+          <input type="radio" name="slider" id="items-3">
+          <input type="radio" name="slider" id="items-4">
+          <div class="cards1">
+          <label class="card" for="items-1" id="song-1">
+            <img class="secpart"src="images/wine.png" alt="song">
+          </label>
+          <label class="card" for="items-2" id="song-2">
+            <img class="secpart"src="images/toast.png" alt="song">
+          </label>
+          <label class="card" for="items-3" id="song-3">
+            <img class="secpart"src="images/barbeque.png" alt="song">
+          </label>
+          <label class="card" for="items-4" id="song-4">
+            <img class="secpart"src="images/pasta.png" alt="song">
+          </label>
+          <button style="position: relative;  transform: rotate(-90deg);z-index: 11000;">&#10094;</button>
+        </div>
+        <div class="player">
+          <div class="upper-part">
+            <div class="info-area" id="test">
+            <center>
+              <label class="song-info" id="song-info-1">
+                  <div class="title">Kendall Red Wine
+                  </div>
+                <div class="sub-line">
+                  <div class="subtitle">Red wine is a type of wine made from dark-colored grape varieties. The actual color of the wine can range from intense violet, typical of young wines</div>
+                </div>
+                <div class="price">French </div>
+                  <div class="price">Chef  Lucien
+                </div>
+              </label>
+              <label class="song-info" id="song-info-2">
+                <div class="title">Masiona French Toast
+                </div>
+                <div class="sub-line">
+                  <div class="subtitle">French toast is a dish made of sliced bread soaked in beaten eggs and typically milk, then pan fried. </div>
+                </div>
+                <div class="price">French </div>
+                  <div class="price">Chef  Abella
+                </div>
+              </label>
+              <label class="song-info" id="song-info-3">
+                <div class="title">Parla-Barbeque
+                  
+                </div>
+                <div class="sub-line">
+                  <div class="subtitle">Barbeque is a dish made of sliced bread soaked in beaten eggs and typically milk, then pan fried. </div>
+                </div>
+                <div class="price">French </div>
+                  <div class="price">Chef  Abella
+                </div>
+              </label>
+              <label class="song-info" id="song-info-4">
+                <div class="title">Flaminche Pasta
+                </div>
+                <div class="sub-line">
+                  <div class="subtitle">Flaminche Pasta is a dish made of sliced bread soaked in beaten eggs and typically milk, then pan fried. </div>
+                </div>
+                <div class="price">French </div>
+                  <div class="price"></div>Chef  Abella
+                </div>
+              </label>
+               
+            </center>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+                  <center>
+                      <div class ="cntr" style="width: 45vw;min-height: 45vh !important;background: #FDE6CE; padding: auto;">
+                        
+                          <div class="container4" style="width: 100%;height: 100%;">
+                            <div
+                              class="text-start sidebar" style="color: white !important; text-align: center !important; align-items: center !important; margin: 0px 0px 0px 0px!important; padding-left: 12vw;">ABOUT THIS ROOM
+                          </div>
+                              <div class="row " style="height: 100%;width: 100%; padding-top: 40px; padding-left: 40px;padding-bottom: 40px;padding-right: 20px;">
+                                  <div class="col-md-6" style="width: 50%;height: 100%; display: flex; flex-direction: column; text-align: center !important; align-items: center !important;">
+                                      <div style="width: 100%;height: 60px; display: flex; margin-bottom: 5px;">
+                                          <div style="width: 50px;height: 40px;background: url(&quot;images/about2.png&quot;) no-repeat;background-size: contain; padding-bottom: 5px;"></div>
+                                          <div style="width: 100%;height: 40px; background: white;">
+                                              <h2 class="text-start individual cntr" style="font-size: 20px !important;position: relative !important; top: 22% !important;">Bathrobe &amp; slippers<br></h2>
+                                          </div>
+                                      </div>
+                                      <div style="width: 100%;height: 50px; display: flex; margin-bottom: 10px;">
+                                          <div style="width: 50px;height: 40px;background: url(&quot;images/about3.png&quot;) no-repeat;background-size: contain;"></div>
+                                          <div style="width: 100%;height: 40px; background: white;">
+                                              <h2 class="text-start individual cntr" style="font-size: 20px !important;position: relative !important; top: 22% !important;">Flat screen TV<br></h2>
+                                          </div>
+                                      </div>
+                                      <div style="width: 100%;height: 50px; display: flex; margin-bottom: 10px;">
+                                          <div style="width: 50px;height: 40px;background: url(&quot;images/about4.png&quot;) no-repeat;background-size: contain;"></div>
+                                          <div style="width: 100%;height: 40px; background: white;">
+                                              <h2 class="text-start individual cntr" style="font-size: 20px !important;position: relative !important; top: 22% !important;">Balcony or Terrace<br></h2>
+                                          </div>
+                                      </div>
+                                      <div style="width: 100%;height: 50px; display: flex; margin-bottom: 10px;">
+                                          <div style="width: 50px;height: 40px;background: url(&quot;images/about5.png&quot;) no-repeat;background-size: contain;"></div>
+                                          <div style="width: 100%;height: 40px; background: white;">
+                                              <h2 class="text-start individual cntr" style="font-size: 20px !important;position: relative !important; top: 22% !important;">Access to Alpine Hideway Spa<br></h2>
+                                          </div>
+                                      </div>
+                                      <div style="width: 100%;height: 50px; display: flex; margin-bottom: 10px;">
+                                          <div style="width: 50px;height: 40px;background: url(&quot;images/about6.png&quot;) no-repeat;background-size: contain;"></div>
+                                          <div style="width: 100%;height: 40px; background: white;">
+                                              <h2 class="text-start individual cntr" style="font-size: 20px !important;position: relative !important; top: 22% !important;">Free mineral water &amp; fresh fruit<br></h2>
+                                          </div>
+                                      </div>
+                                      <div style="width: 100%;height: 50px; display: flex; margin-bottom: 10px;">
+                                          <div style="width: 50px;height: 40px;background: url(&quot;images/about7.png&quot;) no-repeat;background-size: contain;"></div>
+                                          <div style="width: 100%;height: 40px; background: white;">
+                                              <h2 class="text-start individual cntr" style="font-size: 20px !important;position: relative !important; top: 22% !important;">Telephone<br></h2>
+                                          </div>
+                                      </div>
+                                      <div style="width: 100%;height: 50px; display: flex; margin-bottom: 10px;">
+                                          <div style="width: 50px;height: 40px;background: url(&quot;images/about1.png&quot;) no-repeat;background-size: contain;"></div>
+                                          <div style="width:100%;height: 40px; background: white;">
+                                              <h2 class="text-start individual cntr" style="font-size: 20px !important;position: relative !important; top: 22% !important;">Kettle, Tea &amp; Coffee<br></h2>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6" style="height: 100%;width: 50%;"><img src="images/aboutroom.png" style="width: 100%;min-height: 45vh;">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </center>
+                </div>
+
+              </div>
+            </div>
+
+
+      <script src="assets3/bootstrap/js/bootstrap.min.js"></script>
+      </div>
+
+
+            <div class="roomsmalls">
+              <div class="container-fluid" style="padding-top: 0;margin-top: 0px;background: #ffffff;height: 20vh;margin-bottom: 0px;padding-bottom: 0px;">
+                  <div class="row" style="margin: 0px;margin-top: 26px;padding: 40px 0px 0px;padding-top: 0px;">
+                      <div class="col-md-4 d-xxl-flex align-self-center justify-content-xxl-center align-items-xxl-center" style="margin-bottom: -5%;margin-top: -5%;">
+                          <div class="floral"></div>
+                      </div>
+                      <div class="col-md-4"><img src="images/brand.png" style="width: 100%;height: 100%;"></div>
+                      <div class="col-md-4 d-xxl-flex align-self-center justify-content-xxl-center align-items-xxl-center" style="margin-bottom: -5%;margin-top: -5%;">
+                          <div class="floralr"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall topp">HOTEL Melbourne</h2>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/hotel1.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">HOTEL RIVERIA</h2>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/hotel2.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">HOTEL DARWIN</h2>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/hotel3.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">HOTEL CARLTON</h2>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/hotel4.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">HOTEL FLEXIO</h2>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/hotel5.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">HOTEL CASABLANCA</h2>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/hotel6.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">HOTEL MARINA</h2>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/hotel7.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">HOTEL HILTON</h2>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/hotel8.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">HOTEL MELLISA</h2>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/hotel9.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">HOTEL PEARL</h2>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/hotel10.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="container-fluid" style="padding-top: 0;margin-top: 0px;background: #ffffff;height: 20vh;margin-bottom: 0px;padding-bottom: 0px;">
+                <div class="row" style="margin: 0px;margin-top: 26px;padding: 40px 0px 0px;padding-top: 0px;">
+                    <div class="col-md-4 d-xxl-flex align-self-center justify-content-xxl-center align-items-xxl-center" style="margin-bottom: -5%;margin-top: -5%;">
+                        <div class="floral"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <h1 class="text-center" style="font-family: 'Cinzel Decorative', serif;font-size: 54;margin-top: 0px;margin-bottom: -12px;font-weight: bold;padding-top: 0;">OUR</h1><img src="images/Line.png" style="width: 100%; box-shadow: none !important;">
+                    </div>
+                    <div class="col-md-4 d-xxl-flex align-self-center justify-content-xxl-center align-items-xxl-center" style="margin-bottom: -5%;margin-top: -5%;">
+                        <div class="floralr"></div>
+                    </div>
+                </div>
+                <h1 class="text-center" style="font-family: 'Cinzel Decorative', serif;font-size: 54;margin-top: 2px;font-weight: bold;">ADVENTURES</h1>
+            </div>
+          <div>
+            <div class="container-fluid">
+                <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                    <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                        <h2 class="text-end hsmall text-startsmall">PARAGLIDING</h2>
+                        <p class="psmall"><br><em>"Paragliding  : an adventure sport where you glide through the air using a wide canopy, a fabric wing."</em><br></p>
+                    </div>
+                    <div class="col-md-6 smallcolumn" style="padding: 0px;width: 450px;height: 700px;"><img src="images/adven1.png" width="375px" height="700px" style="height: 100%;width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+          <div class="container-fluid">
+              <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                  <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                      <h2 class="text-end hsmall text-startsmall">SCUBA DIVING</h2>
+                      <p class="psmall"><br><em>"Scuba diving can be an exotic and enriching activity, and it can also be a therapeutic one. Feel the weightlessness of a water environment around you ."</em><br></p>
+                  </div>
+                  <div class="col-md-6 smallcolumn" style="padding: 0px;width: 450px;height: 700px;"><img src="images/adven2.png" width="375px" height="700px" style="height: 100%;width: 100%;"></div>
+              </div>
+          </div>
+      </div>
+      <div>
+        <div class="container-fluid">
+            <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                    <h2 class="text-end hsmall text-startsmall">SWIMMING </h2>
+                    <p class="psmall"><br><em>At the very least, there’s certainly nothing more refreshing than a quick trip to the pool. Indeed, with temperatures at their peak.</em><br></p>
+                </div>
+                <div class="col-md-6 smallcolumn" style="padding: 0px;width: 450px;height: 700px;"><img src="images/adven3.png" width="375px" height="700px" style="height: 100%;width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+              <div class="container-fluid" style="padding-top: 0;margin-top: 0px;background: #ffffff;height: 20vh;margin-bottom: 0px;padding-bottom: 0px;">
+                  <div class="row" style="margin: 0px;margin-top: 26px;padding: 40px 0px 0px;padding-top: 0px;">
+                      <div class="col-md-4 d-xxl-flex align-self-center justify-content-xxl-center align-items-xxl-center" style="margin-bottom: -5%;margin-top: -5%;">
+                          <div class="floral"></div>
+                      </div>
+                      <div class="col-md-4">
+                          <h1 class="text-center" style="font-family: 'Cinzel Decorative', serif;font-size: 54;margin-top: 0px;margin-bottom: -12px;font-weight: bold;padding-top: 0;">OUR</h1><img src="images/Line.png" style="width: 100%; box-shadow: none !important;">
+                      </div>
+                      <div class="col-md-4 d-xxl-flex align-self-center justify-content-xxl-center align-items-xxl-center" style="margin-bottom: -5%;margin-top: -5%;">
+                          <div class="floralr"></div>
+                      </div>
+                  </div>
+                  <h1 class="text-center" style="font-family: 'Cinzel Decorative', serif;font-size: 54;margin-top: 2px;font-weight: bold;">ROOMS</h1>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">LUXURY ROOMS</h2>
+                              <p class="psmall"><br><em>"Our room, The Senlac, was on the first floor and overlooked the gardens. Generously sized room with magnificent bathroom, and the bed – *wow! Loads of storage too."</em><br></p>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/luxury.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">PREMIUM ROOMS</h2>
+                              <p class="psmall"><br>Premium rooms feature the ambiance and space you're looking for to unwind and are ornated with state-of-the-art amenities.<br></p>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/premium.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">MIDSCALE ROOMS</h2>
+                              <p class="psmall"><br>Blending style with functionality is an important objective for designers when delivering a midscale hotel room. Practical for the business user and appealing for the tourist market<br></p>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/midscale.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">ECONOMY&nbsp;ROOMS</h2>
+                              <p class="psmall">Economy rooms feature a design blended with Ottoman motifs, each line carrying tones from the city, reflecting the stylish elegance of nobility.<br></p>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/economy.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="container-fluid" style="padding-top: 0;margin-top: 0px;background: #ffffff;height: 20vh;margin-bottom: 0px;padding-bottom: 0px;">
+                  <div class="row" style="margin: 0px;margin-top: 26px;padding: 40px 0px 0px;padding-top: 0px;">
+                      <div class="col-md-4 d-xxl-flex align-self-center justify-content-xxl-center align-items-xxl-center" style="margin-bottom: -5%;margin-top: -5%;">
+                          <div class="floral"></div>
+                      </div>
+                      <div class="col-md-4">
+                          <h1 class="text-center" style="font-family: 'Cinzel Decorative', serif;font-size: 54;margin-top: 0px;margin-bottom: -12px;font-weight: bold;padding-top: 0;">OUR</h1><img src="images/Line.png" style="width: 100%; box-shadow: none !important;">
+                      </div>
+                      <div class="col-md-4 d-xxl-flex align-self-center justify-content-xxl-center align-items-xxl-center" style="margin-bottom: -5%;margin-top: -5%;">
+                          <div class="floralr"></div>
+                      </div>
+                  </div>
+                  <h1 class="text-center" style="font-family: 'Cinzel Decorative', serif;font-size: 54;margin-top: 2px;font-weight: bold;">CUISINES</h1>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">Kendall Red Wine<br></h2>
+                              <p class="psmall">Red wine is a type of wine made from dark-colored grape varieties. The actual color of the wine can range from intense violet, typical of young wines<br></p>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/wine.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">Masiona French Toast<br></h2>
+                              <p class="psmall">French toast is a dish made of sliced bread soaked in beaten eggs and typically milk, then pan fried.<br></p>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/toast.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">Parla-Barbeque<br></h2>
+                              <p class="psmall">Barbeque is a dish made of sliced bread soaked in beaten eggs and typically milk, then pan fried.<br></p>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/barbeque.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="container-fluid">
+                      <div class="row justify-content-center" style="background: #fef2e5;padding-top: 50px;">
+                          <div class="col-md-6 text-start align-self-center" style="padding: 0px;width: 690px;filter: hue-rotate(0deg) saturate(100%) sepia(0%);height: auto;text-align: left;">
+                              <h2 class="text-end hsmall text-startsmall">Flaminche Pasta<br></h2>
+                              <p class="psmall">Flaminche Pasta is a dish made of sliced bread soaked in beaten eggs and typically milk, then pan fried.<br></p>
+                          </div>
+                          <div class="col-md-6 smallcolumn" style="padding: 0px;width: 700px;height: 450px;"><img src="images/pasta.png" width="700px" height="375px" style="height: 100%;width: 100%;"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div style="background-color: white;">
+          <footer class="footer-clean" style="background: url(&quot;images/footerbg.png&quot;) center / cover no-repeat;height: auto;padding-bottom: 0;padding-top: 0;box-shadow: none !important;">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-start">
+                    <div class="col-sm-4 col-md-3 text-center item" style="width: auto;height: auto;"><img src="images/footerlogo.png" style="width: 225px;height: 150px; box-shadow: none  !important;"></div>
+                </div>
+                <div class="row justify-content-center align-items-start" style="margin-bottom: 25px;">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3 style="font-family: 'Playfair Display', serif;font-size: 24.4px;">About us</h3>
+                        <ul>
+                            <li style="font-family: 'Playfair Display', serif;text-align: center;"><a href="boardofdirectors.html" style="font-size: 16.5px;">SPONSORS</a></li>
+                            <li style="font-family: 'Playfair Display', serif;text-align: center;"><a href="boardofdirectors.html" style="font-size: 16.5px;">PARTNERSHIPS</a></li>
+                            <li style="font-family: 'Playfair Display', serif;text-align: center;"><a href="boardofdirectors.html" style="font-size: 16.5px;font-family: 'Playfair Display', serif;">BOARD OF DIRECTORS</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item" style="width: auto;">
+                        <h3 style="font-size: 24.4px;font-family: 'Playfair Display', serif;">Contact&nbsp;</h3>
+                        <div class="social-icons" style="padding: 0;width: 100%;"><a href="#"><i class="icon ion-social-twitter" style="background: #000000;color: #fef2e5;"></i></a><a href="#"><i class="icon ion-social-facebook" style="color: #fef2e5;background: #000000;"></i></a><a href="#"><i class="icon ion-android-mail" style="color: #fef2e5;background: #000000;"></i></a><a href="#"><i class="icon ion-social-youtube" style="color: #fef2e5;background: #000000;"></i></a></div>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3 style="font-size: 24.4px;font-family: 'Playfair Display', serif;">Donate</h3>
+                        <ul>
+                            <li style="text-align: center;"><a href="socialwork.html" style="font-size: 16.5px;font-family: 'Playfair Display', serif;">Auriga Old age homes</a></li>
+                            <li style="text-align: center;font-family: 'Playfair Display', serif;"><a href="socialwork.html" style="font-size: 16.5px;">Auriga Orphanage</a></li>
+                            <li style="text-align: center;"><a href="socialwork.html" style="font-size: 16.5px;font-family: 'Playfair Display', serif;">Auriga Caring Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" style="min-height: 75px;background: rgba(0,0,0,0.39);margin-top: 0;height: auto;">
+                <div class="row justify-content-center align-items-center" style="height: 100%;min-height: 75px;">
+                    <div class="col-md-4 text-center align-self-center" style="height: 100%;min-height: 0px;"><a href="#" style="font-family: 'Playfair Display', serif;font-size: 13px;margin-left: 2px;margin-right: 2px;border-color: rgb(0,0,0);">Privacy policies</a></div>
+                    <div class="col-md-4 text-center"><a href="#" style="font-family: 'Playfair Display', serif;font-size: 13px;margin-right: 2px;margin-left: 2px;">Cookie Policies</a></div>
+                    <div class="col-md-4 text-center"><a href="#" style="font-family: 'Playfair Display', serif;font-size: 13px;margin-right: 2px;margin-left: 2px;">Terms &amp; Conditions</a></div>
+                </div>
+            </div>
+        </footer>
+      </div>
+
+
+      <div class="modal fade" role="dialog" tabindex="-1" id="login-signup" style="background: rgba(254,242,229,0.43);margin-bottom: 0px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div style="margin-top: 10%;">
+                    <div class="modal-footer" id="modalfooter-1" style="width: auto;background: rgb(254,242,229);border-style: none;border-radius: 0px;margin-bottom: -24px;"><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: rgba(248,249,250,0.35);margin: -50px;margin-bottom: 4px;border-width: 0px;border-radius: 59%;"><i class="icon ion-android-close" style="font-size: 18px;"></i></button></div>
+                    <div class="modal-body text-center d-xl-flex align-items-xl-start" style="width: 100%;padding: 0px;background: url(&quot;assets/img/formarrow.png&quot;) center / contain no-repeat, #fef2e5;padding-bottom: 5%;height: 600px;margin-top: 0px;padding-top: 0px;">
+                        <div style="padding: 0px;width: 100%;">
+                            <ul class="nav nav-tabs" role="tablist" style="width: 100%;border-style: none;font-size: 30px;font-family: 'Playfair Display', serif;margin-top: 2%;">
+                                <li class="nav-item text-center" role="presentation" style="width: 50%;"><a class="nav-link text-center" role="tab" data-bs-toggle="tab" href="#tab-1" style="background: rgba(254,242,229,0);font-family: 'Playfair Display', serif;font-size: 30px;text-align: center;border-width: 0px;border-style: none;color: rgb(67,67,67);width: 100%;">Login</a></li>
+                                <li class="nav-item text-center" role="presentation" style="width: 50%;"><a class="nav-link active text-center" role="tab" data-bs-toggle="tab" href="#tab-2" style="background: rgba(254,242,229,0);font-family: 'Playfair Display', serif;font-size: 30px;text-align: center;border-width: 0px;border-style: none;color: rgb(67,67,67);width: 100%;">SignUp</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane" role="tabpanel" id="tab-1" style="margin-top: 25px;">
+                                    <h1 style="font-family: 'Cinzel Decorative', serif;font-size: 50px;text-align: center;margin-top: 16%;">Welcome!</h1>
+                                    <p style="font-family: 'Playfair Display', serif;font-size: 23px;text-align: center;padding-left: 10%;padding-right: 10%;">We give you a legendary welcome, every time you come back !<br></p>
+                                    <form class="text-center" style="padding-left: 15%;padding-right: 15%;margin-top: 6%;margin-bottom: 20px;">
+                                      <input class="form-control" type="email" style="margin-bottom: 20px;font-family: 'Playfair Display', serif;border-style: none;border-radius: 0px;height: 45px;box-shadow: 5px 5px 4px rgb(139,139,139);" placeholder="Email Address">
+                                      <input class="form-control" type="password" style="margin-bottom: 20px;font-family: 'Playfair Display', serif;border-style: none;border-radius: 0px;height: 45px;box-shadow: 5px 5px 4px rgb(139,139,139);" placeholder="Password"><button class="btn btn-primary" type="button" style="width: 150px;background: rgb(0,0,0);font-family: 'Playfair Display', serif;font-size: 20px;border-radius: 0px;margin-top: 5%;">Login</button></form>
+                                </div>
+                                <div class="tab-pane active" role="tabpanel" id="tab-2" style="margin-top: 25px;">
+                                    <p style="font-family: 'Playfair Display', serif;font-size: 23px;text-align: center;padding-left: 10%;padding-right: 10%;">Signup using your email address<br></p>
+                                    <form class="text-center" style="padding-left: 15%;padding-right: 15%;margin-top: 6%;margin-bottom: 20px;">
+                                      <input class="form-control" type="text" style="margin-bottom: 20px;font-family: 'Playfair Display', serif;border-style: none;border-radius: 0px;height: 45px;box-shadow: 5px 5px 4px rgb(139,139,139);" placeholder="Name">
+                                      <input class="form-control" type="email" style="margin-bottom: 20px;font-family: 'Playfair Display', serif;border-style: none;border-radius: 0px;height: 45px;box-shadow: 5px 5px 4px rgb(139,139,139);" placeholder="Email Address">
+                                      <input class="form-control" type="password" style="margin-bottom: 20px;font-family: 'Playfair Display', serif;border-style: none;border-radius: 0px;height: 45px;box-shadow: 5px 5px 4px rgb(139,139,139);" placeholder="Password"><button class="btn btn-primary" type="button" style="width: 150px;background: rgb(0,0,0);font-family: 'Playfair Display', serif;font-size: 20px;border-radius: 0px;margin-top: 5%;">SignUp</button></form><!-- Start: 1 Row 3 Columns -->
+                                    <div class="container" style="margin-top: 10%;margin-bottom: 0;">
+                                        <div class="row" style="margin-left: 10%;margin-right: 10%;">
+                                            <div class="col-md-4" style="width: 42%;height: 2px;border-radius: -1px;border: 2px dashed rgb(86,86,86) ;"></div>
+                                            <div class="col-md-4 align-self-center" style="width: 10%;height: 2px;">
+                                                <p style="font-family: 'Playfair Display', serif;text-align: center;margin-bottom: 15px;margin-top: -12px;">OR</p>
+                                            </div>
+                                            <div class="col-md-4" style="width: 45%;height: 2px;border-radius: -1px;border: 2px dashed rgb(86,86,86) ;"></div>
+                                        </div>
+                                    </div><!-- End: 1 Row 3 Columns -->
+                                    <div class="row" style="margin-bottom: 0%;margin-top: 5%;">
+                                        <div class="col"><button class="btn btn-primary" type="button" style="width: 50px;height: 50px;background: #000000;border-radius: 50%;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="color: #fef2e5;font-size: 25px;">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.00977 5.83789C3.00977 5.28561 3.45748 4.83789 4.00977 4.83789H20C20.5523 4.83789 21 5.28561 21 5.83789V17.1621C21 18.2667 20.1046 19.1621 19 19.1621H5C3.89543 19.1621 3 18.2667 3 17.1621V6.16211C3 6.11449 3.00333 6.06765 3.00977 6.0218V5.83789ZM5 8.06165V17.1621H19V8.06199L14.1215 12.9405C12.9499 14.1121 11.0504 14.1121 9.87885 12.9405L5 8.06165ZM6.57232 6.80554H17.428L12.7073 11.5263C12.3168 11.9168 11.6836 11.9168 11.2931 11.5263L6.57232 6.80554Z" fill="currentColor"></path>
+                                                </svg></button><button class="btn btn-primary" type="button" style="width: 50px;height: 50px;background: #000000;border-radius: 50%;margin-left: 5%;margin-right: 5%;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="color: #fef2e5;font-size: 25px;">
+                                                    <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" fill="currentColor"></path>
+                                                </svg></button><button class="btn btn-primary" type="button" style="width: 50px;height: 50px;background: #000000;border-radius: 50%;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="color: #fef2e5;font-size: 25px;">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z" fill="currentColor"></path>
+                                                    <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="currentColor"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" fill="currentColor"></path>
+                                                </svg></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="assets5/bootstrap/js/bootstrap.min.js"></script>
+
+          <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+              </body>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+  var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("BTN");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+var btn = document.getElementById("BTN-2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+var btn = document.getElementById("BTN-3");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+var btn = document.getElementById("BTN-4");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+</body>
+<script>$('input').on('change', function() {
+    $('body').toggleClass('blue');
+  });</script>
+
+</html>

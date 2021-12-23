@@ -1,0 +1,109 @@
+@media (min-width: 992px) {
+  .lrcontainer {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 991px) {
+  .lrcol {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .lrcol {
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  #lrmidcol {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 1px;
+    border-spacing: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  #lrleftcol {
+    margin-left: 2% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #lrrightcol {
+    margin-right: 2% !important;
+  }
+}
+
+h1 {
+  font-size: 51px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+@media (min-width: 769px) {
+  .floral {
+    background: url("../../assets/img/Floral%20left.png") center / contain no-repeat;
+    padding: 125px;
+    height: 0px;
+    padding-top: 0px;
+    padding-bottom: 125px;
+    padding-right: 125px;
+    margin: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .floral {
+    background: url("../../assets/img/Floral%20left.png") center / contain no-repeat;
+    width: 0px;
+    padding: 0px;
+    height: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    margin: 1px;
+  }
+}
+
+@media (min-width: 769px) {
+  .floralr {
+    background: url("../../assets/img/Floral%20right.png") center / contain no-repeat;
+    padding: 125px;
+    height: 0px;
+    padding-top: 0px;
+    padding-right: 125px;
+    padding-bottom: 125px;
+  }
+}
+
+@media (max-width: 768px) {
+  .floralr {
+    background: url("../../assets/img/Floral%20right.png") center / contain no-repeat;
+    padding: 0px;
+    height: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    width: 0px;
+  }
+}
+
+h1 {
+  font-size: 39px;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  p {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+}
+

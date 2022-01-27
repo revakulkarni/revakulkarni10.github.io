@@ -27,4 +27,19 @@ The website is made wholly in HTML and CSS only.
 - Attractive and Interactive User-Interface
 - Web Friendly
 
+## Screenshots
+
+![AURIGA](https://i.postimg.cc/762JM6ZW/2022-01-27-9.png)
+
+![AURIGA](https://i.postimg.cc/hvHXJqnq/2022-01-27-10.png)
+
+![AURIGA](https://i.postimg.cc/fbwJSKGk/2022-01-27-11.png)
+
+![AURIGA](https://i.postimg.cc/XYWwxwM6/2022-01-27-12.png)
+
+![AURIGA](https://i.postimg.cc/YCXhggM3/2022-01-27-13.png)
+
+![AURIGA](https://i.postimg.cc/13Y34Qr7/2022-01-27-14.png)
+
+![AURIGA](https://i.postimg.cc/wv2MkmdF/2022-01-27-15.png)
   
